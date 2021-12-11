@@ -93,7 +93,7 @@
             logoutBtn = document.getElementById("logout")
             signupBtn = document.getElementById("signup")
             loggedIn=localStorage.getItem("loggedIn")
-            if (loggedIn==="0"){
+            if (loggedIn == undefined || loggedIn==0){
                 loginBtn.style.display = "inline-block"
                 signupBtn.style.display = "inline-block"
             }
