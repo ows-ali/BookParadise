@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    <title>BookParadise - About Us</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <!-- start navbar -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo-red">BookParadise</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li id="login"><a href="login.html" >Login</a></li>
+                        <li id="signup"><a href="signup.html" >Signup</a></li>
+                        <li id="logout"><a href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end navbar -->
+        </div>
+    </div>
+    <!-- end header  -->
+    <!-- start about us content -->
+    <div class="single-product">
+        <div class="small-container">
+            <div class="row">
+                <h2 class="title">About BookParadise</h2>
+                <p>
+                    We have a huge collection of books in information technology. BookParadise offers all books at fair price and extends customer satisfaction by providing user friendly search engine, easy payment options and quick delivery solutions. We provide exciting offers and discounts on our books... More lorem ipsum
+                    <br><br>We have a huge collection of books in information technology. BookParadise offers all books at fair price and extends customer satisfaction by providing user friendly search engine, easy payment options and quick delivery solutions. We provide exciting offers and discounts on our books... More lorem ipsum
+                    <br><br>We have a huge collection of books in information technology. BookParadise offers all books at fair price and extends customer satisfaction by providing user friendly search engine, easy payment options and quick delivery solutions. We provide exciting offers and discounts on our books... More lorem ipsum
+                    <br><br>We have a huge collection of books in information technology. BookParadise offers all books at fair price and extends customer satisfaction by providing user friendly search engine, easy payment options and quick delivery solutions. We provide exciting offers and discounts on our books... More lorem ipsum
+                    <br><br>We have a huge collection of books in information technology. BookParadise offers all books at fair price and extends customer satisfaction by providing user friendly search engine, easy payment options and quick delivery solutions. We provide exciting offers and discounts on our books... More lorem ipsum
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- end about us -->
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <a href="index.html" class="logo-white">BookParadise</a>
+                    </div>
+                    <div class="footer-col-2">
+                        <a href="index.html" class="logo-white">BookParadise</a>
+                        <p>Your one stop shop for all your book needs</p>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - BookParadise</p>
+            </div>
+        </div>
+        <!-- end footer -->
+        <script>
+            // self executing function here
+            (function() {
+            loginBtn = document.getElementById("login")
+            logoutBtn = document.getElementById("logout")
+            signupBtn = document.getElementById("signup")
+            loggedIn=localStorage.getItem("loggedIn")
+            if (loggedIn==="0"){
+                loginBtn.style.display = "inline-block"
+                signupBtn.style.display = "inline-block"
+            }
+            else{
+                logoutBtn.style.display = "inline-block"
+    
+            }
+    
+    
+            })();
+        </script>    
+</body>
+</html>
