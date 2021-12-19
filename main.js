@@ -75,7 +75,7 @@ function login(){
     error_message.innerHTML = "Logged in successfully!"
     
     setTimeout(() => {
-        window.location.href='/'
+        window.location.href='index.html'
         
     }, 2000); 
     return false
@@ -119,7 +119,7 @@ function signup(){
     error_message.innerHTML = "Signed up successfully!"
     
     setTimeout(() => {
-        window.location.href='/'
+        window.location.href='index.html'
         
     }, 2000); 
     return false
